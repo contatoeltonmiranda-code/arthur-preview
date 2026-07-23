@@ -831,6 +831,48 @@ body.has-rev-bar{padding-top:40px}
   body.has-rev-bar{padding-top:48px}
 }
 /* ================ FIM DO BLOCO DE REVISAO ================ */
+
+/* ================ BACKGROUNDS DE SECAO (fotos reais + overlay indigo) ================ */
+.hero{
+  background-image:
+    linear-gradient(158deg,rgba(11,13,36,.80) 0%,rgba(11,13,36,.90) 100%),
+    url("assets/backgrounds/bg-hero.png");
+  background-size:cover;background-position:72% center;background-repeat:no-repeat;
+}
+.sec-dor{
+  background-color:var(--base3);
+  background-image:
+    linear-gradient(158deg,rgba(11,13,36,.82) 0%,rgba(11,13,36,.90) 100%),
+    url("assets/backgrounds/bg-realidade.png");
+  background-size:cover;background-position:82% center;background-repeat:no-repeat;
+}
+.sec-transf{
+  background-color:var(--base2);
+  background-image:
+    linear-gradient(158deg,rgba(11,13,36,.82) 0%,rgba(11,13,36,.90) 100%),
+    url("assets/backgrounds/bg-transformacao.png");
+  background-size:cover;background-position:18% center;background-repeat:no-repeat;
+}
+.sec-suporte{
+  background-color:#0B0D24;
+  background-image:
+    linear-gradient(158deg,rgba(11,13,36,.82) 0%,rgba(11,13,36,.90) 100%),
+    url("assets/backgrounds/bg-depois-certificado.png");
+  background-size:cover;background-position:center center;background-repeat:no-repeat;
+}
+.sec-passos{
+  background-color:var(--base2);
+  background-image:
+    linear-gradient(158deg,rgba(11,13,36,.82) 0%,rgba(11,13,36,.90) 100%),
+    url("assets/backgrounds/bg-passo-a-passo.png");
+  background-size:cover;background-position:center 30%;background-repeat:no-repeat;
+}
+/* foto real do Arthur na secao "quem vai te ensinar" */
+.aut-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:22px;z-index:1}
+/* avatares reais das alunas (medalhoes da oferta) */
+.preco-medal.m-1 img{object-position:50% 42%}
+.preco-medal.m-2 img{object-position:44% 46%}
+.preco-medal.m-3 img{object-position:50% 44%}
 </style>
 </head>
 <body class="has-rev-bar">
@@ -1295,13 +1337,8 @@ body.has-rev-bar{padding-top:40px}
       </div>
       <div class="golpe-visual">
         <div class="g-frame">
-          <div class="g-ph" role="img" aria-label="Imagem a fornecer — foto real da escola, turma ou do Arthur">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z"/><path d="M3 16l5-5 4 4 3-3 6 6"/><circle cx="8.5" cy="9" r="1.5"/></svg>
-            <span class="g-ph-t">Imagem a fornecer</span>
-            <span class="g-ph-d">Foto da escola, turma ou do Arthur &middot; ~600x750</span>
-          </div>
+          <img src="assets/fotos-lp/anti-golpe.jpg" alt="Arthur Rocha lendo para uma turma cheia e atenta na sede da School LAR" loading="lazy">
         </div>
-        <p class="g-todo"><span class="rev-todo">[A CONFIRMAR: imagem da seção anti-golpe — enviar foto real da escola, turma ou do Arthur]</span></p>
       </div>
     </div>
     <div class="center" style="margin-top:38px">
@@ -1466,7 +1503,7 @@ body.has-rev-bar{padding-top:40px}
           <span class="glow" aria-hidden="true"></span>
           <span class="aut-ringpulse" aria-hidden="true"></span>
           <div class="aut-frame">
-            <span class="rev-todo">[A CONFIRMAR: foto real do Arthur Rocha, de frente, no ambiente da aula. Alt: "Arthur Rocha, responsável pela School LAR, durante aula presencial"]</span>
+            <img src="assets/fotos-lp/arthur-quem-ensina.jpg" alt="Arthur Rocha, responsável pela School LAR, durante aula presencial" loading="lazy">
           </div>
           <div class="aut-seal" aria-hidden="true">
             <svg class="seal-rot" viewBox="0 0 142 142">
@@ -1547,22 +1584,22 @@ body.has-rev-bar{padding-top:40px}
         <!-- medalhoes de foto sangrando dos cantos (ref Katia .price-medal) — placeholders temporarios -->
         <div class="preco-medal m-1" aria-hidden="true">
           <span class="medal-glow"></span><span class="medal-ring"></span>
-          <img src="https://i.pravatar.cc/300?img=45" alt="" loading="lazy" width="148" height="148">
+          <img src="assets/fotos-lp/avatar-2.jpg" alt="" loading="lazy" width="148" height="148">
         </div>
         <div class="preco-medal m-2" aria-hidden="true">
           <span class="medal-glow"></span><span class="medal-ring"></span>
-          <img src="https://i.pravatar.cc/300?img=32" alt="" loading="lazy" width="104" height="104">
+          <img src="assets/fotos-lp/avatar-1.jpg" alt="" loading="lazy" width="104" height="104">
         </div>
         <div class="preco-medal m-3" aria-hidden="true">
           <span class="medal-glow"></span><span class="medal-ring"></span>
-          <img src="https://i.pravatar.cc/300?img=12" alt="" loading="lazy" width="126" height="126">
+          <img src="assets/fotos-lp/avatar-3.jpg" alt="" loading="lazy" width="126" height="126">
         </div>
         <span class="preco-tag">Investimento</span>
         <div class="preco-val"><span class="rev-price">$1.200<span class="rev-tag">preço provisório — alterar</span></span></div>
         <div class="preco-parc">ou <span class="rev-price">3x de $400<span class="rev-tag">preço provisório — alterar</span></span></div>
         <p class="preco-nota">Pagamento único de matrícula. Não há mensalidade depois.<br><span class="rev-todo">[A CONFIRMAR: formas de pagamento aceitas — Zelle, cartão, dinheiro, transferência?]</span></p>
         <div class="preco-social">
-          <span class="av-cap">Alunos já formados pela School LAR <span class="rev-todo">[fotos temporárias — trocar por alunas reais]</span></span>
+          <span class="av-cap">Alunos já formados pela School LAR</span>
         </div>
         <a href="#" class="btn lg cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-13-oferta"><span>Falar no WhatsApp e garantir minha vaga</span></a>
         <p class="micro" style="margin-left:auto;margin-right:auto">Você conversa primeiro. Paga só depois de entender tudo. Recibo pelo WhatsApp na hora do pagamento.</p>
