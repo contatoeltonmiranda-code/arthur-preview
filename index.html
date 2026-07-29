@@ -891,6 +891,33 @@ body.has-rev-bar{padding-top:40px}
 .preco-medal.m-1 img{object-position:50% 50%}
 .preco-medal.m-2 img{object-position:50% 50%}
 .preco-medal.m-3 img{object-position:50% 50%}
+/* ==================================================================
+   RONDA 7 - confirmacoes do cliente (mapa, calendario de turmas, preco)
+   ================================================================== */
+/* mapa do endereco (secao anti-golpe, tema light) */
+.golpe-mapa{max-width:900px;margin:26px auto 0;background:#fff;border:1px solid rgba(18,34,44,.1);border-radius:16px;padding:24px 26px;box-shadow:0 6px 20px rgba(18,34,44,.06);text-align:center}
+.golpe-mapa h3{font-size:17px;margin-bottom:6px;line-height:1.35}
+.golpe-mapa .gm-end{font-family:'Cinzel',serif;font-size:16px;letter-spacing:.6px;color:#8A6A2E;font-weight:600;margin-bottom:16px}
+.gm-frame{position:relative;width:100%;max-width:100%;height:300px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgba(201,160,92,.55),0 10px 26px rgba(18,34,44,.12)}
+.gm-frame iframe{width:100%;height:100%;border:0;display:block;max-width:100%}
+@media(max-width:600px){.golpe-mapa{padding:18px 14px;border-radius:14px}.gm-frame{height:240px}}
+
+/* calendario de turmas (secao oferta) */
+.turma-box .turma-sub{font-size:15px;color:var(--texto);margin-bottom:20px;line-height:1.6}
+.turma-box .turma-sub b{color:var(--gold-claro)}
+.turma-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.turma-card{background:rgba(255,255,255,.05);border:1px solid rgba(201,160,92,.35);border-radius:12px;padding:14px 8px;display:flex;flex-direction:column;gap:5px;align-items:center;transition:border-color .28s,transform .28s}
+.turma-card:hover{border-color:rgba(201,160,92,.7);transform:translateY(-3px)}
+.tc-mes{font-family:'Cinzel',serif;font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold-claro);font-weight:600}
+.tc-dias{font-family:'Cinzel Decorative',serif;font-size:17px;color:var(--branco);line-height:1.25;letter-spacing:.4px}
+.tc-obs{font-size:11px;color:#8FA0AA;letter-spacing:.3px}
+@media(max-width:900px){.turma-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.turma-grid{grid-template-columns:repeat(2,1fr);gap:10px}.tc-dias{font-size:15.5px}}
+
+/* card de investimento - formato aprovado ($150 + 3x $280 / total $990) */
+.preco-val{margin-bottom:2px}
+.preco-rot{font-family:'Cinzel',serif;font-size:12.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold-claro);margin-bottom:14px}
+.preco-total{font-size:14.5px;color:#8FA0AA;letter-spacing:.4px;margin-bottom:6px}
 </style>
 </head>
 <body class="has-rev-bar">
@@ -930,13 +957,13 @@ body.has-rev-bar{padding-top:40px}
       <h1>Você não veio para os Estados Unidos para trabalhar <span class="gold-it">12 horas por dia a vida inteira.</span></h1>
       <p class="sub">A School LAR forma cuidadores de idosos (Home Health Aide) em <strong>três aulas presenciais aos domingos</strong>, em Marlborough. Aula em português, <strong>material em português</strong>, <strong>certificado válido em todos os Estados Unidos</strong> e <strong>suporte para entrar no mercado</strong> depois de formado.</p>
       <div class="hero-ctas">
-        <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="hero">
+        <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="hero">
           <svg class="btn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.24 8.2z"/></svg>
           <span>Falar no WhatsApp e tirar minhas dúvidas</span>
         </a>
         <a href="#inclusos" class="btn ghost"><span>Ver o que está incluso na matrícula</span></a>
       </div>
-      <p class="micro">Você fala direto com a escola. Sem robô, sem formulário longo, sem compromisso de matrícula na primeira conversa. <span class="rev-todo">[A CONFIRMAR: número oficial de WhatsApp]</span></p>
+      <p class="micro">Você fala direto com a escola. Sem robô, sem formulário longo, sem compromisso de matrícula na primeira conversa.</p>
     </div>
     <div class="hero-visual" aria-hidden="true">
       <div class="hero-orbit-mini" aria-hidden="true">
@@ -971,7 +998,7 @@ body.has-rev-bar{padding-top:40px}
     </div>
     <div class="trust-item sr-hidden">
       <span class="trust-ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4"/></svg></span>
-      <p>Certificado válido em todos os Estados Unidos <span class="rev-todo">[A CONFIRMAR: nome do órgão emissor]</span></p>
+      <p>Certificado válido em todos os Estados Unidos (lei 42 CFR 484.36)</p>
     </div>
     <div class="trust-item sr-hidden">
       <span class="trust-ic"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11l-3 3-2-2"/></svg></span>
@@ -1051,7 +1078,7 @@ body.has-rev-bar{padding-top:40px}
       <div class="pilar-card sr-hidden">
         <span class="pilar-ic"><svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
         <h3>Remuneração digna</h3>
-        <p>Paga acima do que se paga na maioria dos trabalhos braçais informais que oferecem para você hoje. <span class="rev-todo rev-todo-block">[A CONFIRMAR: podemos citar faixa salarial média de HHA em Massachusetts? Sem confirmação, esta frase fica qualitativa — nunca com número inventado.]</span></p>
+        <p>Paga acima do que se paga na maioria dos trabalhos braçais informais que oferecem para você hoje. Um Home Health Aide ganha <strong>entre $20 e $45 por hora</strong>.</p>
         <span class="pilar-num">3</span>
       </div>
       <div class="pilar-card sr-hidden">
@@ -1066,7 +1093,7 @@ body.has-rev-bar{padding-top:40px}
       <div class="ct ct-hha sr-hidden"><b>O que HHA oferece</b>Profissão certificada, demanda estável, horários negociáveis, e uma carreira dentro do sistema de saúde americano.</div>
     </div>
     <div class="center" style="margin-top:44px">
-      <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-3-hha"><span>Quero entender se HHA serve para mim &mdash; falar no WhatsApp</span></a>
+      <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="secao-3-hha"><span>Quero entender se HHA serve para mim &mdash; falar no WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -1113,7 +1140,7 @@ body.has-rev-bar{padding-top:40px}
       A School LAR forma, certifica e encaminha. <b>A School LAR não garante emprego, não intermedeia visto e não tem nenhuma relação com processo imigratório.</b> Quem promete emprego garantido está te enganando. O que existe aqui é formação de verdade, certificado de verdade e portas de verdade &mdash; abertas por você.
     </div>
     <div class="center" style="margin-top:36px">
-      <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-4-transformacao"><span>Falar no WhatsApp</span></a>
+      <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="secao-4-transformacao"><span>Falar no WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -1161,7 +1188,7 @@ body.has-rev-bar{padding-top:40px}
         <span class="ent-n">06</span>
         <span class="ent-ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><circle cx="12" cy="10" r="2.5"/><path d="M9 20l3-2 3 2v-4H9z"/></svg></span>
         <h3>Certificado válido em todos os Estados Unidos</h3>
-        <p>Ao concluir as três aulas, você recebe o certificado de Home Health Aide, com validade em todo o território americano. <span class="rev-todo rev-todo-block">[A CONFIRMAR: nome do órgão/entidade emissora do certificado]</span></p>
+        <p>Ao concluir as três aulas, você recebe o certificado de Home Health Aide, com validade em todo o território americano (lei 42 CFR 484.36).</p>
       </div>
       <div class="ent-card sr-hidden">
         <span class="ent-n">07</span>
@@ -1178,7 +1205,7 @@ body.has-rev-bar{padding-top:40px}
     </div>
     <p class="ent-fecho sr-hidden">Oito itens. Uma única matrícula. Nada de "isso é à parte".</p>
     <div class="center" style="margin-top:34px">
-      <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-5-inclusos"><span>Ver valores e falar no WhatsApp</span></a>
+      <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="secao-5-inclusos"><span>Ver valores e falar no WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -1202,7 +1229,6 @@ body.has-rev-bar{padding-top:40px}
         <span class="sup-n">1</span>
         <h3>Indicação para agências parceiras</h3>
         <p>A School LAR mantém relação com agências que contratam Home Health Aides na região. Ao concluir o curso, você é encaminhado a essas agências.</p>
-        <p><span class="rev-todo">[A CONFIRMAR: as agências parceiras podem ser citadas pelo nome na página?]</span></p>
         <div class="sup-alerta"><b>Importante:</b> encaminhamento não é contratação. A School LAR abre a porta e te apresenta. A decisão final é sempre da agência.</div>
       </div>
       <div class="sup-card sr-hidden">
@@ -1221,11 +1247,11 @@ body.has-rev-bar{padding-top:40px}
     <div class="sup-expect sr-hidden">
       <h3>Quanto tempo até começar a trabalhar?</h3>
       <p>Você está apto ao mercado imediatamente ao terminar as três aulas &mdash; com o certificado e o crachá em mãos.</p>
-      <p style="margin-top:14px"><span class="rev-todo">[A CONFIRMAR: o cliente relatou no briefing que alunos costumam conseguir entrevista na mesma semana em que terminam. Só publicar essa frase se ele confirmar que é o padrão e não a exceção. E mesmo assim, publicar como "entrevista", nunca como "emprego".]</span></p>
+      <p style="margin-top:14px">Na prática, boa parte dos alunos sai da terceira aula já com entrevista marcada ou com o emprego encaminhado. Isso é o comum nas turmas da School LAR, não a exceção.</p>
       <p style="margin-top:16px">O que <b>não</b> vamos escrever aqui: que você vai ter emprego garantido. Isso não existe, e quem promete está mentindo. O que existe é: você formado, certificado, encaminhado e conectado a quem já está no mercado. O resto é seu trabalho &mdash; e a School LAR fica do seu lado nele.</p>
     </div>
     <div class="center" style="margin-top:40px">
-      <a href="#" class="btn lg cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-6-suporte"><span>Quero esse suporte &mdash; falar no WhatsApp</span></a>
+      <a href="https://wa.me/17818707373" class="btn lg cta-wa" data-wa="17818707373" data-origem="secao-6-suporte"><span>Quero esse suporte &mdash; falar no WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -1246,7 +1272,7 @@ body.has-rev-bar{padding-top:40px}
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Você já trabalhou na área da saúde no país de origem e quer voltar a atuar</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Você nunca trabalhou com saúde, mas tem paciência, cuidado e responsabilidade com pessoas</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Seu inglês ainda é limitado e você precisa estudar em português</li>
-          <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Você tem entre 17 e 60 anos <span class="rev-todo">[A CONFIRMAR: existe idade mínima ou máxima formal?]</span></li>
+          <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Você tem 17 anos ou mais &mdash; não existe idade máxima</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Você pode estar presente nos três domingos de aula em Marlborough</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Você quer horário flexível para ter tempo com a família</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Você entende que a escola forma e encaminha, e que o emprego depende também de você</li>
@@ -1267,7 +1293,7 @@ body.has-rev-bar{padding-top:40px}
     </div>
     <p class="quem-fecho sr-hidden">Se você leu a coluna da direita e nada ali é você,<br>então a próxima conversa vale a pena.</p>
     <div class="center" style="margin-top:34px">
-      <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-7-para-quem"><span>Falar no WhatsApp</span></a>
+      <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="secao-7-para-quem"><span>Falar no WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -1295,14 +1321,14 @@ body.has-rev-bar{padding-top:40px}
         <span class="ck-n">1</span>
         <div>
           <h3>Endereço físico. Você pode ir lá antes de pagar.</h3>
-          <p>As aulas acontecem em endereço fixo em Marlborough, Massachusetts. Não é sala emprestada de última hora, não é "avisamos o local depois". <span class="rev-todo rev-todo-block">[A CONFIRMAR: endereço completo — deve aparecer escrito na página e no Google Maps embutido]</span></p>
+          <p>As aulas acontecem em endereço fixo em Marlborough, Massachusetts. Não é sala emprestada de última hora, não é "avisamos o local depois". O endereço é <strong>11 Apex Dr, Marlborough, MA</strong> &mdash; e está no mapa logo abaixo.</p>
         </div>
       </div>
       <div class="check-item sr-hidden">
         <span class="ck-n">2</span>
         <div>
           <h3>Rosto, nome e história do responsável.</h3>
-          <p>A School LAR é conduzida pelo Arthur Rocha, que aparece de cara nesta página, nas redes sociais e no WhatsApp. Você fala com uma pessoa, não com um perfil anônimo. <span class="rev-todo rev-todo-block">[A CONFIRMAR: formação, credenciais e tempo de atuação do Arthur]</span></p>
+          <p>A School LAR é conduzida pelo Arthur Rocha, que aparece de cara nesta página, nas redes sociais e no WhatsApp. Você fala com uma pessoa, não com um perfil anônimo. Arthur é <strong>enfermeiro</strong>, com <strong>12 anos de experiência na assistência em diferentes setores hospitalares</strong> e <strong>5 anos em docência</strong>.</p>
         </div>
       </div>
       <div class="check-item sr-hidden">
@@ -1341,6 +1367,13 @@ body.has-rev-bar{padding-top:40px}
         </div>
       </div>
     </div>
+    <div class="golpe-mapa sr-hidden">
+      <h3>O endereço está no mapa. Você pode passar lá antes de decidir.</h3>
+      <p class="gm-end">11 Apex Dr, Marlborough, MA</p>
+      <div class="gm-frame">
+        <iframe src="https://www.google.com/maps?q=11+Apex+Dr,+Marlborough,+MA&amp;output=embed" title="Mapa com a localizacao das aulas da School LAR em 11 Apex Dr, Marlborough, MA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
     <div class="golpe-split sr-hidden">
       <div class="golpe-content">
         <h3>Desconfie de qualquer escola ou pessoa que:</h3>
@@ -1361,7 +1394,7 @@ body.has-rev-bar{padding-top:40px}
       </div>
     </div>
     <div class="center" style="margin-top:38px">
-      <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-8-transparencia"><span>Tirar todas as minhas dúvidas antes de decidir</span></a>
+      <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="secao-8-transparencia"><span>Tirar todas as minhas dúvidas antes de decidir</span></a>
     </div>
   </div>
 </section>
@@ -1394,7 +1427,7 @@ body.has-rev-bar{padding-top:40px}
             <div class="pillar-n">2</div>
             <div class="pillar-body">
               <h3>Você<br>faz a matrícula</h3>
-              <p>Se fizer sentido para você, faz a matrícula e efetua o pagamento. Investimento: <span class="rev-price">$1.200<span class="rev-tag">preço provisório — alterar</span></span> ou <span class="rev-price">3x de $400<span class="rev-tag">preço provisório — alterar</span></span>.</p>
+              <p>Se fizer sentido para você, faz a matrícula e efetua o pagamento. São <strong>$150</strong> para garantir a vaga e mais <strong>3x $280</strong>, pagos em cada uma das três aulas &mdash; <strong>$990 no total</strong>.</p>
             </div>
           </div>
           <div class="pillar">
@@ -1416,7 +1449,7 @@ body.has-rev-bar{padding-top:40px}
             <div class="pillar-body">
               <h3>Você<br>faz as três aulas presenciais</h3>
               <p>Três domingos em Marlborough, Massachusetts. Teoria e prática. Aula em português, material em português.</p>
-              <p style="margin-top:10px"><span class="rev-todo">[A CONFIRMAR: horário de início e término das aulas]</span> <span class="rev-todo">[A CONFIRMAR: data da próxima turma]</span></p>
+              <p style="margin-top:10px">Cada aula acontece <b>das 9h às 16h</b> (9am&ndash;4pm). O calendário completo das turmas está na seção de investimento.</p>
               <div class="domingo-box domingo-sub">
                 <h3>Por que aos domingos?</h3>
                 <p>Porque nós sabemos como é a sua semana.</p>
@@ -1434,7 +1467,7 @@ body.has-rev-bar{padding-top:40px}
           </div>
         </div>
         <div style="margin-top:34px">
-          <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-9-passos"><span>Falar no WhatsApp e reservar minha vaga</span></a>
+          <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="secao-9-passos"><span>Falar no WhatsApp e reservar minha vaga</span></a>
         </div>
       </div>
     </div>
@@ -1537,7 +1570,7 @@ body.has-rev-bar{padding-top:40px}
         <span class="eyebrow">Quem conduz</span>
         <h2 style="margin-top:18px">Quem <span class="gold-it">vai te ensinar</span></h2>
         <p>A School LAR nasceu de uma constatação simples: existe uma comunidade brasileira inteira nos Estados Unidos trabalhando abaixo do que é capaz, só porque a informação certa nunca chegou em português.</p>
-        <p>Arthur Rocha é quem conduz a escola. <span class="rev-todo">[A CONFIRMAR: formação, credenciais, registro profissional e tempo de atuação na área da saúde nos EUA]</span></p>
+        <p>Arthur Rocha é quem conduz a escola. Ele é <strong>enfermeiro</strong>, com <strong>12 anos de experiência na assistência em diferentes setores hospitalares</strong> e <strong>5 anos em docência</strong>.</p>
         <p class="aut-missao">A missão da School LAR é uma frase só: transformar imigrantes em profissionais qualificados para o sistema de saúde americano.</p>
         <p>Não é escola de vender certificado. É escola de colocar gente dentro de uma profissão &mdash; com material em português, prática de verdade e alguém do lado depois que a aula acaba.</p>
       </div>
@@ -1565,7 +1598,7 @@ body.has-rev-bar{padding-top:40px}
       </div>
     </div>
     <div class="center" style="margin-top:38px">
-      <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-11-arthur"><span>Falar direto com a escola no WhatsApp</span></a>
+      <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="secao-11-arthur"><span>Falar direto com a escola no WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -1592,7 +1625,7 @@ body.has-rev-bar{padding-top:40px}
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Material didático completo em português</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Apostila de vocabulário inglês&ndash;português da área</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Crachá profissional</li>
-          <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Certificado de Home Health Aide válido em todos os Estados Unidos <span class="rev-todo">[A CONFIRMAR: órgão emissor]</span></li>
+          <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Certificado de Home Health Aide válido em todos os Estados Unidos</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Encaminhamento às agências parceiras</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Acesso à rede de ex-alunos já atuando no mercado</li>
           <li><span class="li-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Estratégias para conseguir paciente particular</li>
@@ -1614,20 +1647,29 @@ body.has-rev-bar{padding-top:40px}
           <img src="assets/fotos-lp/cert-3.jpg" alt="Aluna formada mostrando o certificado de Home Health Aide" loading="lazy" width="126" height="126">
         </div>
         <span class="preco-tag">Investimento</span>
-        <div class="preco-val"><span class="rev-price">$1.200<span class="rev-tag">preço provisório — alterar</span></span></div>
-        <div class="preco-parc">ou <span class="rev-price">3x de $400<span class="rev-tag">preço provisório — alterar</span></span></div>
-        <p class="preco-nota">Pagamento único de matrícula. Não há mensalidade depois.<br><span class="rev-todo">[A CONFIRMAR: formas de pagamento aceitas — Zelle, cartão, dinheiro, transferência?]</span></p>
+        <div class="preco-val">$150</div>
+        <div class="preco-rot">para garantir a vaga</div>
+        <div class="preco-parc">+ 3x $280 nas aulas</div>
+        <div class="preco-total">Total: $990</div>
+        <p class="preco-nota">Não há mensalidade depois. Formas de pagamento: Zelle, Venmo, Cash App, cartão de crédito e cartão de débito.</p>
         <div class="preco-social">
           <span class="av-cap">Alunos já formados pela School LAR</span>
         </div>
-        <a href="#" class="btn lg cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="secao-13-oferta"><span>Falar no WhatsApp e garantir minha vaga</span></a>
+        <a href="https://wa.me/17818707373" class="btn lg cta-wa" data-wa="17818707373" data-origem="secao-13-oferta"><span>Falar no WhatsApp e garantir minha vaga</span></a>
         <p class="micro" style="margin-left:auto;margin-right:auto">Você conversa primeiro. Paga só depois de entender tudo. Recibo pelo WhatsApp na hora do pagamento.</p>
         <p class="honesta-linha">Não trabalhamos com desconto e não oferecemos reembolso. Isto é certificação profissional, não produto de prateleira. Por isso queremos que você converse com a escola e tenha certeza <b>antes</b> de pagar qualquer coisa.</p>
       </div>
     </div>
     <div class="turma-box sr-hidden">
-      <h3>Próxima turma</h3>
-      <p><span class="rev-todo">[A CONFIRMAR: data da próxima turma]</span> <span class="rev-todo">[A CONFIRMAR: número de vagas por turma]</span></p>
+      <h3>Próximas turmas</h3>
+      <p class="turma-sub">Cada turma são <b>três domingos</b>, das <b>9h às 16h</b>. São <b>30 vagas por turma</b>.</p>
+      <div class="turma-grid">
+        <div class="turma-card"><span class="tc-mes">Agosto</span><span class="tc-dias">9 &middot; 16 &middot; 23</span><span class="tc-obs">3 domingos</span></div>
+        <div class="turma-card"><span class="tc-mes">Setembro</span><span class="tc-dias">13 &middot; 20 &middot; 27</span><span class="tc-obs">3 domingos</span></div>
+        <div class="turma-card"><span class="tc-mes">Outubro</span><span class="tc-dias">11 &middot; 18 &middot; 25</span><span class="tc-obs">3 domingos</span></div>
+        <div class="turma-card"><span class="tc-mes">Novembro</span><span class="tc-dias">15 &middot; 22 &middot; 29</span><span class="tc-obs">3 domingos</span></div>
+        <div class="turma-card"><span class="tc-mes">Dezembro</span><span class="tc-dias">6 &middot; 13 &middot; 20</span><span class="tc-obs">3 domingos</span></div>
+      </div>
     </div>
   </div>
   <!-- carrossel full-bleed de formatura/turmas -->
@@ -1676,9 +1718,9 @@ body.has-rev-bar{padding-top:40px}
         <div class="ans">
           <p>Essa é a objeção mais legítima de todas, e não vamos fingir o contrário.</p>
           <p>Mas faça a conta em cima do que você já vive. Quanto vale uma hora do seu trabalho hoje? E quantas horas por semana você entrega para receber isso?</p>
-          <p>A matrícula é <span class="rev-price">$1.200<span class="rev-tag">preço provisório — alterar</span></span>, e dá para dividir em <span class="rev-price">3x de $400<span class="rev-tag">preço provisório — alterar</span></span>. É um valor pago uma vez, para uma certificação que fica com você para sempre e abre uma área que tem demanda o ano inteiro.</p>
+          <p>São <strong>$150</strong> para garantir a vaga e mais <strong>3x $280</strong>, pagos em cada uma das três aulas: <strong>$990 no total</strong>. É um valor pago uma vez, para uma certificação que fica com você para sempre e abre uma área que tem demanda o ano inteiro.</p>
           <p>Não existe desconto e não vamos inventar um para te empurrar. O que existe é parcelamento e a chance de conversar com a escola sobre o que cabe na sua realidade.</p>
-          <p><span class="rev-todo">[A CONFIRMAR: existe outra forma de pagamento além do 3x? Entrada + saldo? Prazo diferente?]</span></p>
+          <p>As formas de pagamento aceitas são Zelle, Venmo, Cash App, cartão de crédito e cartão de débito.</p>
         </div>
       </details>
       <details class="acc">
@@ -1688,7 +1730,7 @@ body.has-rev-bar{padding-top:40px}
           <p>Três deslocamentos, em um dia em que o trânsito é o menor da semana e você não está de plantão em lugar nenhum.</p>
           <p>Muita gente que se formou aqui veio de outras cidades exatamente por isso: em português, na região, e concentrado em três datas.</p>
           <p>E dentro do grupo da turma é comum alguém combinar carona com quem mora perto. Você não vai estar sozinho nisso.</p>
-          <p><span class="rev-todo">[A CONFIRMAR: existe estacionamento no local? Há transporte público próximo? Alguma orientação oficial sobre carona?]</span></p>
+          <p>No local há <strong>garagem coberta ampla</strong>. Transporte público não é comum na região, então a própria turma organiza caronas pelo grupo de WhatsApp &mdash; algo que o Arthur incentiva.</p>
         </div>
       </details>
       <details class="acc">
@@ -1747,7 +1789,7 @@ body.has-rev-bar{padding-top:40px}
       </details>
       <details class="acc">
         <summary>Quanto custa? <span class="plus">+</span></summary>
-        <div class="ans"><p><span class="rev-price">$1.200<span class="rev-tag">preço provisório — alterar</span></span>, ou <span class="rev-price">3x de $400<span class="rev-tag">preço provisório — alterar</span></span>. Pagamento único de matrícula, sem mensalidade depois. Tudo o que está na lista de inclusos já está nesse valor.</p></div>
+        <div class="ans"><p><strong>$990 no total</strong>: $150 de matrícula, para garantir a vaga, mais 3x $280 pagos em cada uma das três aulas. Sem mensalidade depois. Tudo o que está na lista de inclusos já está nesse valor.</p></div>
       </details>
       <details class="acc">
         <summary>Tem desconto? <span class="plus">+</span></summary>
@@ -1759,7 +1801,7 @@ body.has-rev-bar{padding-top:40px}
       </details>
       <details class="acc">
         <summary>Quanto tempo dura? <span class="plus">+</span></summary>
-        <div class="ans"><p>Três aulas, em três domingos. Ao final você recebe o certificado e o crachá.</p><p><span class="rev-todo">[A CONFIRMAR: horário de início e término de cada aula]</span></p></div>
+        <div class="ans"><p>Três aulas, em três domingos, das <strong>9h às 16h</strong> (9am&ndash;4pm). Ao final você recebe o certificado e o crachá.</p></div>
       </details>
       <details class="acc">
         <summary>Por que as aulas são só aos domingos? <span class="plus">+</span></summary>
@@ -1767,7 +1809,7 @@ body.has-rev-bar{padding-top:40px}
       </details>
       <details class="acc">
         <summary>O certificado vale em qual estado? <span class="plus">+</span></summary>
-        <div class="ans"><p>Em todos os Estados Unidos. <span class="rev-todo">[A CONFIRMAR: nome do órgão/entidade emissora]</span></p></div>
+        <div class="ans"><p>Em todos os Estados Unidos, em estados com legislação semelhante à de Massachusetts &mdash; como <strong>Connecticut</strong> e <strong>Florida</strong>, entre outros. (lei 42 CFR 484.36)</p></div>
       </details>
       <details class="acc">
         <summary>Preciso ter experiência na área da saúde? <span class="plus">+</span></summary>
@@ -1775,31 +1817,31 @@ body.has-rev-bar{padding-top:40px}
       </details>
       <details class="acc">
         <summary>Qual é a idade mínima? <span class="plus">+</span></summary>
-        <div class="ans"><p><span class="rev-todo">[A CONFIRMAR: idade mínima e requisitos formais de entrada]</span></p></div>
+        <div class="ans"><p>A idade mínima é <strong>17 anos</strong>. Não existe idade máxima.</p><p>E não há nenhum requisito formal de entrada: não é preciso diploma, experiência anterior na saúde nem inglês.</p></div>
       </details>
       <details class="acc">
         <summary>Que documentos preciso levar? <span class="plus">+</span></summary>
-        <div class="ans"><p><span class="rev-todo">[A CONFIRMAR: documentação exigida para matrícula]</span></p></div>
+        <div class="ans"><p>Nenhum. Não exigimos nenhum documento para a matrícula. Você conversa no WhatsApp, garante a vaga e comparece nos três domingos.</p></div>
       </details>
       <details class="acc">
         <summary>Moro longe. Vale a pena o deslocamento? <span class="plus">+</span></summary>
-        <div class="ans"><p>São três deslocamentos, em domingos. Muita gente vem de outras cidades porque é o único curso da região em português e concentrado em três datas. É comum combinarem carona pelo grupo da turma.</p><p><span class="rev-todo">[A CONFIRMAR: estacionamento no local / transporte público próximo]</span></p></div>
+        <div class="ans"><p>São três deslocamentos, em domingos. Muita gente vem de outras cidades porque é o único curso da região em português e concentrado em três datas. É comum combinarem carona pelo grupo da turma.</p><p>No local há garagem coberta ampla. Transporte público não é comum na região, então a turma organiza caronas pelo grupo de WhatsApp, com incentivo do Arthur.</p></div>
       </details>
       <details class="acc">
         <summary>E se eu faltar a uma aula? <span class="plus">+</span></summary>
-        <div class="ans"><p><span class="rev-todo">[A CONFIRMAR: política de reposição de aula]</span></p></div>
+        <div class="ans"><p>Sim, dá para repor. A reposição pode ser <strong>online ou presencial</strong>, no mesmo mês ou no mês seguinte.</p></div>
       </details>
       <details class="acc">
         <summary>Quando começa a próxima turma? <span class="plus">+</span></summary>
-        <div class="ans"><p><span class="rev-todo">[A CONFIRMAR: data da próxima turma e vagas]</span> Chame no WhatsApp para saber a data atualizada.</p></div>
+        <div class="ans"><p>As turmas vão de agosto a dezembro: <strong>agosto</strong> 9, 16 e 23; <strong>setembro</strong> 13, 20 e 27; <strong>outubro</strong> 11, 18 e 25; <strong>novembro</strong> 15, 22 e 29; <strong>dezembro</strong> 6, 13 e 20. Sempre três domingos, das 9h às 16h, com 30 vagas por turma.</p><p>Chame no WhatsApp para garantir sua vaga na turma que preferir.</p></div>
       </details>
       <details class="acc">
         <summary>Como faço o pagamento e recebo comprovante? <span class="plus">+</span></summary>
-        <div class="ans"><p>Você conversa no WhatsApp, tira todas as dúvidas e, se decidir, faz a matrícula. O recibo chega pelo seu WhatsApp na hora. Em seguida você entra no grupo da sua turma.</p><p><span class="rev-todo">[A CONFIRMAR: formas de pagamento aceitas]</span></p></div>
+        <div class="ans"><p>Você conversa no WhatsApp, tira todas as dúvidas e, se decidir, faz a matrícula. O recibo chega pelo seu WhatsApp na hora. Em seguida você entra no grupo da sua turma.</p><p>As formas de pagamento aceitas são Zelle, Venmo, Cash App, cartão de crédito e cartão de débito.</p></div>
       </details>
       <details class="acc">
         <summary>Onde exatamente são as aulas? <span class="plus">+</span></summary>
-        <div class="ans"><p>Marlborough, Massachusetts. <span class="rev-todo">[A CONFIRMAR: endereço completo + link do Google Maps]</span></p></div>
+        <div class="ans"><p>11 Apex Dr, Marlborough, Massachusetts. O mapa está na seção "Por que isso não é golpe" desta página.</p></div>
       </details>
     </div>
   </div>
@@ -1821,11 +1863,11 @@ body.has-rev-bar{padding-top:40px}
         <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Uniforme, material, crachá e certificado inclusos</span>
         <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Suporte de verdade para entrar no mercado</span>
       </div>
-      <a href="#" class="btn lg cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="cta-final">
+      <a href="https://wa.me/17818707373" class="btn lg cta-wa" data-wa="17818707373" data-origem="cta-final">
         <svg class="btn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.24 8.2z"/></svg>
         <span>Falar no WhatsApp agora</span>
       </a>
-      <p class="micro">Você fala direto com a School LAR. Sem robô e sem compromisso. <span class="rev-todo">[A CONFIRMAR: número oficial de WhatsApp]</span></p>
+      <p class="micro">Você fala direto com a School LAR. Sem robô e sem compromisso.</p>
       <p class="final-fecho">E se ainda tiver dúvida, mande a dúvida. É para isso que o WhatsApp está aí.</p>
     </div>
   </div>
@@ -1856,30 +1898,30 @@ body.has-rev-bar{padding-top:40px}
       <div class="foot-col">
         <h3>Contato</h3>
         <ul>
-          <li>WhatsApp: <span class="rev-todo">[A CONFIRMAR]</span></li>
-          <li>Endereço das aulas: <span class="rev-todo">[A CONFIRMAR: endereço completo, Marlborough, MA]</span></li>
-          <li>Instagram: @povarthurgiorgi <span class="rev-todo">[A CONFIRMAR: é o perfil oficial da escola ou pessoal do Arthur?]</span></li>
-          <li>E-mail: <span class="rev-todo">[A CONFIRMAR]</span></li>
+          <li>WhatsApp: (781) 870-7373</li>
+          <li>Endereço das aulas: 11 Apex Dr, Marlborough, MA</li>
+          <li>Instagram: <a href="https://www.instagram.com/school_lar" target="_blank" rel="noopener">@school_lar</a></li>
+          <li>E-mail: <a href="mailto:arthur@largroup.com.br">arthur@largroup.com.br</a></li>
         </ul>
       </div>
       <div class="foot-col">
         <h3>Pronto para começar?</h3>
-        <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="rodape"><span>Falar no WhatsApp</span></a>
+        <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="rodape"><span>Falar no WhatsApp</span></a>
       </div>
     </div>
     <div class="foot-legal">
-      <p class="aviso">A School LAR é uma instituição de formação profissional. <b>Não garantimos emprego, contratação ou renda.</b> Não prestamos serviços de imigração e não temos qualquer relação com processos de visto, green card ou regularização migratória. O certificado emitido é de conclusão de curso de Home Health Aide. <span class="rev-todo">[A CONFIRMAR: órgão emissor e texto legal exato do certificado]</span></p>
-      <p>&copy; 2026 School LAR. Todos os direitos reservados. <span class="rev-todo">[A CONFIRMAR: razão social / EIN]</span> &middot; Política de Privacidade &middot; Termos de Uso <span class="rev-todo">[A CONFIRMAR: Política de Privacidade e Termos de Uso precisam existir como páginas antes do link ir ao ar]</span></p>
+      <p class="aviso">A School LAR é uma instituição de formação profissional. <b>Não garantimos emprego, contratação ou renda.</b> Não prestamos serviços de imigração e não temos qualquer relação com processos de visto, green card ou regularização migratória. O certificado emitido é de conclusão de curso de Home Health Aide, válido em todos os Estados Unidos (lei 42 CFR 484.36).</p>
+      <p>&copy; 2026 School LAR. Todos os direitos reservados. &middot; Política de Privacidade &middot; Termos de Uso <span class="rev-todo">[A CONFIRMAR: Política de Privacidade e Termos de Uso precisam existir como páginas antes do link ir ao ar]</span></p>
     </div>
   </div>
 </footer>
 
 <!-- ============ FLUTUANTES ============ -->
-<a href="#" class="wa-float cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="float" aria-label="Falar no WhatsApp">
+<a href="https://wa.me/17818707373" class="wa-float cta-wa" data-wa="17818707373" data-origem="float" aria-label="Falar no WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.24 8.2z"/></svg>
 </a>
 <div class="sticky-cta">
-  <a href="#" class="btn cta-wa" data-wa="[A CONFIRMAR: numero WhatsApp]" data-origem="sticky-mobile"><span>Falar no WhatsApp</span></a>
+  <a href="https://wa.me/17818707373" class="btn cta-wa" data-wa="17818707373" data-origem="sticky-mobile"><span>Falar no WhatsApp</span></a>
 </div>
 
 <script>
@@ -1962,11 +2004,11 @@ body.has-rev-bar{padding-top:40px}
 })();
 
 /* ---- CTAs de WhatsApp ----
-   Ainda nao existe numero. Enquanto data-wa comecar com "[A CONFIRMAR",
-   o clique nao navega. Quando o numero chegar, basta trocar o valor de
-   data-wa em todos os CTAs (ou setar WA_NUMERO abaixo) que o link passa a funcionar. */
+   Numero oficial confirmado pelo cliente: (781) 870-7373.
+   Cada CTA ja sai do HTML com href https://wa.me/17818707373; este bloco
+   apenas acrescenta a mensagem pre-preenchida e a origem do clique. */
 (function(){
-  var WA_NUMERO = '';
+  var WA_NUMERO = '17818707373';
   var MSG = 'Olá! Vim pelo site e quero saber mais sobre o curso de HHA da School LAR.';
   var ctas = document.querySelectorAll('.cta-wa');
   Array.prototype.forEach.call(ctas, function(a){
