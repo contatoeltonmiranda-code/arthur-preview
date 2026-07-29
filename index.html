@@ -255,7 +255,6 @@ p+p{margin-top:14px}
 .trust-ic{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:#12143A;border:1px solid rgba(18,20,58,.55);display:flex;align-items:center;justify-content:center}
 .trust-ic svg{width:17px;height:17px;stroke:var(--gold-claro);stroke-width:2;fill:none}
 .trust-item p{font-size:14.5px;color:#12143A;font-weight:500;line-height:1.5}
-.trust .rev-todo{background:rgba(214,54,10,.14);border:1px dashed #A82D07;color:#8F2606}
 
 /* ============ 2. DOR ============ */
 .sec-dor{background:var(--base3);overflow:hidden}
@@ -807,48 +806,6 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
   .wa-float svg{width:27px;height:27px}
 }
 
-/* ==================================================================
-   BLOCO DE REVISAO — REMOVER ANTES DE PUBLICAR
-   Tudo daqui pra baixo existe so para o cliente enxergar o que falta.
-   Apagar este bloco + a div .rev-bar no HTML + as classes
-   .rev-price / .rev-todo do texto = pagina limpa.
-   ================================================================== */
-.rev-price{
-  background:#FFE24D;color:#3A2E00;font-weight:700;padding:2px 8px;border-radius:5px;
-  box-shadow:0 0 0 1px #C9A400 inset;white-space:normal;overflow-wrap:anywhere;
-}
-.rev-price .rev-tag{
-  display:inline-block;background:#C9A400;color:#2A2100;font-family:'Inter',sans-serif;
-  font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
-  padding:1px 5px;border-radius:4px;margin-left:6px;vertical-align:middle;line-height:1.5;
-}
-.rev-todo{
-  display:inline;background:rgba(255,86,48,.16);border:1px dashed #FF7A45;color:#FF9C6E;
-  font-family:'Inter',sans-serif;font-size:.88em;font-weight:600;padding:2px 8px;border-radius:6px;
-  white-space:normal;overflow-wrap:anywhere;
-}
-.sec.light .rev-todo,.golpe-box .rev-todo{background:rgba(214,54,10,.1);border-color:#D6360A;color:#A82D07}
-.rev-todo-block{display:block;margin-top:10px}
-.rev-bar{
-  position:fixed;top:0;left:0;right:0;z-index:9999;
-  background:linear-gradient(90deg,#C9A400,#FFD84D);color:#2A2100;
-  font-family:'Inter',sans-serif;font-weight:700;font-size:13px;line-height:1.4;
-  text-align:center;padding:9px 44px 9px 18px;letter-spacing:.01em;
-}
-.rev-bar .rev-count{background:#2A2100;color:#FFD84D;padding:1px 8px;border-radius:20px;margin:0 3px}
-.rev-bar .rev-close{
-  position:absolute;top:50%;right:12px;transform:translateY(-50%);
-  background:rgba(0,0,0,.22);color:#2A2100;border:none;width:24px;height:24px;border-radius:50%;
-  cursor:pointer;font-size:15px;line-height:1;font-weight:800;display:flex;align-items:center;justify-content:center;
-}
-.rev-bar .rev-close:hover{background:rgba(0,0,0,.4)}
-body.has-rev-bar{padding-top:40px}
-@media(max-width:720px){
-  .rev-bar{font-size:11.5px;padding:8px 40px 8px 14px}
-  body.has-rev-bar{padding-top:48px}
-}
-/* ================ FIM DO BLOCO DE REVISAO ================ */
-
 .hero-visual{position:relative;min-height:520px}
 .hero-visual .hero-orbit-mini{position:absolute;right:112px;bottom:6px;margin:0;z-index:4}
 .h2-pre{display:inline-block;font-size:.62em;opacity:.9;letter-spacing:.5px;margin-bottom:2px}
@@ -891,17 +848,6 @@ body.has-rev-bar{padding-top:40px}
 .preco-medal.m-1 img{object-position:50% 50%}
 .preco-medal.m-2 img{object-position:50% 50%}
 .preco-medal.m-3 img{object-position:50% 50%}
-/* ==================================================================
-   RONDA 7 - confirmacoes do cliente (mapa, calendario de turmas, preco)
-   ================================================================== */
-/* mapa do endereco (secao anti-golpe, tema light) */
-.golpe-mapa{max-width:900px;margin:26px auto 0;background:#fff;border:1px solid rgba(18,34,44,.1);border-radius:16px;padding:24px 26px;box-shadow:0 6px 20px rgba(18,34,44,.06);text-align:center}
-.golpe-mapa h3{font-size:17px;margin-bottom:6px;line-height:1.35}
-.golpe-mapa .gm-end{font-family:'Cinzel',serif;font-size:16px;letter-spacing:.6px;color:#8A6A2E;font-weight:600;margin-bottom:16px}
-.gm-frame{position:relative;width:100%;max-width:100%;height:300px;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgba(201,160,92,.55),0 10px 26px rgba(18,34,44,.12)}
-.gm-frame iframe{width:100%;height:100%;border:0;display:block;max-width:100%}
-@media(max-width:600px){.golpe-mapa{padding:18px 14px;border-radius:14px}.gm-frame{height:240px}}
-
 /* calendario de turmas (secao oferta) */
 .turma-box .turma-sub{font-size:15px;color:var(--texto);margin-bottom:20px;line-height:1.6}
 .turma-box .turma-sub b{color:var(--gold-claro)}
@@ -920,14 +866,7 @@ body.has-rev-bar{padding-top:40px}
 .preco-total{font-size:14.5px;color:#8FA0AA;letter-spacing:.4px;margin-bottom:6px}
 </style>
 </head>
-<body class="has-rev-bar">
-
-<!-- BLOCO DE REVISAO — REMOVER ANTES DE PUBLICAR -->
-<div class="rev-bar" id="revBar">
-  VERSÃO DE REVISÃO &mdash; <span class="rev-count" id="revTodoCount">0</span> itens a confirmar e
-  <span class="rev-count" id="revPriceCount">0</span> preços provisórios. Amarelo = preço a alterar. Laranja = falta informação.
-  <button class="rev-close" type="button" aria-label="Fechar aviso de revisão" id="revClose">&times;</button>
-</div>
+<body>
 
 <!-- ---- Header / Logo da marca ---- -->
 
@@ -1365,13 +1304,6 @@ body.has-rev-bar{padding-top:40px}
           <h3>Nós dizemos o que NÃO fazemos.</h3>
           <p>Não conseguimos emprego para você. Não resolvemos visto, green card ou qualquer questão imigratória. Não damos desconto e não trabalhamos com reembolso. Quem promete tudo isso junto normalmente não entrega nada.</p>
         </div>
-      </div>
-    </div>
-    <div class="golpe-mapa sr-hidden">
-      <h3>O endereço está no mapa. Você pode passar lá antes de decidir.</h3>
-      <p class="gm-end">11 Apex Dr, Marlborough, MA</p>
-      <div class="gm-frame">
-        <iframe src="https://www.google.com/maps?q=11+Apex+Dr,+Marlborough,+MA&amp;output=embed" title="Mapa com a localizacao das aulas da School LAR em 11 Apex Dr, Marlborough, MA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
     </div>
     <div class="golpe-split sr-hidden">
@@ -1878,7 +1810,6 @@ body.has-rev-bar{padding-top:40px}
   <div class="wrap">
     <div class="foot-logo-wrap">
       <span class="foot-logo"><img src="assets/identidade-visual/logo-horizontal.jpg" alt="School LAR - Capacitacao para Imigrantes" width="851" height="315"></span>
-      <p style="margin-top:12px"><span class="rev-todo">[A CONFIRMAR: logo em PNG com fundo transparente para integrar 100% ao fundo escuro (header e rodape) - hoje usamos o .jpg com fundo gradiente da marca, emoldurado]</span></p>
     </div>
     <div class="foot-grid">
       <div class="foot-col">
@@ -1911,7 +1842,7 @@ body.has-rev-bar{padding-top:40px}
     </div>
     <div class="foot-legal">
       <p class="aviso">A School LAR é uma instituição de formação profissional. <b>Não garantimos emprego, contratação ou renda.</b> Não prestamos serviços de imigração e não temos qualquer relação com processos de visto, green card ou regularização migratória. O certificado emitido é de conclusão de curso de Home Health Aide, válido em todos os Estados Unidos (lei 42 CFR 484.36).</p>
-      <p>&copy; 2026 School LAR. Todos os direitos reservados. &middot; Política de Privacidade &middot; Termos de Uso <span class="rev-todo">[A CONFIRMAR: Política de Privacidade e Termos de Uso precisam existir como páginas antes do link ir ao ar]</span></p>
+      <p>&copy; 2026 School LAR. Todos os direitos reservados. &middot; <a href="politica-de-privacidade.html">Política de Privacidade</a> &middot; <a href="termos-de-uso.html">Termos de Uso</a></p>
     </div>
   </div>
 </footer>
@@ -2012,39 +1943,14 @@ body.has-rev-bar{padding-top:40px}
   var MSG = 'Olá! Vim pelo site e quero saber mais sobre o curso de HHA da School LAR.';
   var ctas = document.querySelectorAll('.cta-wa');
   Array.prototype.forEach.call(ctas, function(a){
-    var num = WA_NUMERO || (a.getAttribute('data-wa')||'');
-    var pendente = num.indexOf('[A CONFIRMAR') === 0 || !num;
-    if(!pendente){
-      var origem = a.getAttribute('data-origem') || '';
-      a.href = 'https://wa.me/' + num.replace(/\D/g,'') +
-               '?text=' + encodeURIComponent(MSG + (origem ? ' (' + origem + ')' : ''));
-      a.target = '_blank';
-      a.rel = 'noopener';
-    } else {
-      a.addEventListener('click', function(ev){ ev.preventDefault(); });
-    }
+    var origem = a.getAttribute('data-origem') || '';
+    a.href = 'https://wa.me/' + WA_NUMERO +
+             '?text=' + encodeURIComponent(MSG + (origem ? ' (' + origem + ')' : ''));
+    a.target = '_blank';
+    a.rel = 'noopener';
   });
 })();
 
-/* ---- BLOCO DE REVISAO — REMOVER ANTES DE PUBLICAR ---- */
-(function(){
-  var bar = document.getElementById('revBar');
-  if(!bar) return;
-  var todos = document.querySelectorAll('.rev-todo').length;
-  var precos = document.querySelectorAll('.rev-price').length;
-  var elT = document.getElementById('revTodoCount');
-  var elP = document.getElementById('revPriceCount');
-  if(elT) elT.textContent = todos;
-  if(elP) elP.textContent = precos;
-  var btn = document.getElementById('revClose');
-  if(btn){
-    btn.addEventListener('click', function(){
-      bar.remove();
-      document.body.classList.remove('has-rev-bar');
-    });
-  }
-})();
-/* ---- FIM DO BLOCO DE REVISAO ---- */
 </script>
 </body>
 </html>
