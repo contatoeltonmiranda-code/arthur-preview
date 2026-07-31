@@ -919,6 +919,53 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
 /* ===== TESTE - TEXTOS A ESQUERDA NO MOBILE ===== */
 /* A secao 13 inteira (.sec-oferta) permanece com o alinhamento aprovado. */
 @media(max-width:767px){
+  /* Backgrounds mobile: Prancheta 1, 1-1, 1-2, 1-3 e 1-4. */
+  .hero{
+    background-image:url("assets/backgrounds/bg-hero.png");
+    background-size:auto clamp(420px,110vw,700px);
+    background-position:62% top;
+    background-repeat:no-repeat;
+  }
+  .hero .hero-copy > .pretitle{margin-top:300px}
+
+  .sec-dor{
+    background-image:url("assets/backgrounds/bg-realidade.png");
+    background-size:auto clamp(360px,95vw,560px);
+    background-position:82% top;
+    background-repeat:no-repeat;
+  }
+  .sec-dor .wrap > .sr-hidden > .eyebrow{margin-top:250px}
+
+  .sec-transf{
+    background-image:url("assets/backgrounds/bg-transformacao.png");
+    background-size:auto clamp(360px,95vw,560px);
+    background-position:8% top;
+    background-repeat:no-repeat;
+  }
+  .sec-transf .wrap > .center > .eyebrow{margin-top:250px}
+
+  .sec-suporte{
+    padding-top:250px;
+    background-image:url("assets/backgrounds/bg-depois-certificado.png");
+    background-size:auto clamp(360px,95vw,560px);
+    background-position:left top;
+    background-repeat:no-repeat;
+  }
+
+  .sec-passos{
+    background-image:url("assets/backgrounds/bg-passo-a-passo.png");
+    background-size:100% auto;
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+  }
+  .sec-passos .passos-head > .eyebrow{margin-top:250px}
+
+  .sec-virada .pilar-ic{
+    margin-left:0;
+    margin-right:0;
+  }
+
   section:not(.sec-oferta) .center,
   section:not(.sec-oferta).sec-final,
   footer{
