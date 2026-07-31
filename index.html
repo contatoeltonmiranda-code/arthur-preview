@@ -915,6 +915,51 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
   /* 5 cards em 2 colunas: Dezembro ficava sozinho -> ocupa a linha inteira */
   .turma-card:last-child{grid-column:span 2}
 }
+
+/* ===== TESTE - TEXTOS A ESQUERDA NO MOBILE ===== */
+/* A secao 13 inteira (.sec-oferta) permanece com o alinhamento aprovado. */
+@media(max-width:767px){
+  section:not(.sec-oferta) .center,
+  section:not(.sec-oferta).sec-final,
+  footer{
+    text-align:left;
+  }
+
+  section:not(.sec-oferta) .pilar-card,
+  section:not(.sec-oferta) .nota-centered,
+  section:not(.sec-oferta) .ent-fecho,
+  section:not(.sec-oferta) .sup-expect,
+  section:not(.sec-oferta) .quem-fecho,
+  section:not(.sec-oferta) .dor-transicao,
+  section:not(.sec-oferta) .prova-card.is-shot .shot-cap,
+  section:not(.sec-oferta) .evento-head,
+  section:not(.sec-oferta) .final-reforco span,
+  section:not(.sec-oferta) .final-inner>.micro,
+  footer .foot-legal{
+    text-align:left;
+  }
+
+  section:not(.sec-oferta) .final-inner>.micro,
+  footer .foot-legal .aviso{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  section:not(.sec-oferta) .final-reforco{
+    justify-content:flex-start;
+  }
+
+  section:not(.sec-oferta) .btn,
+  footer .btn,
+  .sticky-cta .btn{
+    justify-content:flex-start;
+    text-align:left;
+  }
+
+  footer .foot-col ul{
+    align-items:flex-start;
+  }
+}
 </style>
 </head>
 <body>
