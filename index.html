@@ -865,6 +865,56 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
 .preco-val{margin-bottom:2px}
 .preco-rot{font-family:'Cinzel',serif;font-size:12.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold-claro);margin-bottom:14px}
 .preco-total{font-size:14.5px;color:#8FA0AA;letter-spacing:.4px;margin-bottom:6px}
+
+/* ===== RONDA 10 - MOBILE ===== */
+/* Tudo neste bloco e mobile-only. Desktop (>=901px) nao muda. */
+
+/* 5 - svg de curva alternativo: so aparece no mobile */
+.curve-div svg.curve-mob{display:none}
+
+@media(max-width:760px){
+  /* 5 - divisorias: troca o svg de viewBox 1440 (gota espremida) pelo de 390 (gota larga) */
+  .curve-div svg.curve:not(.curve-mob){display:none}
+  .curve-div svg.curve-mob{display:block;width:100%;height:48px}
+
+  /* 4 - cards "A realidade" em 1 coluna (eram 3 fixas, sem media query) */
+  .dores-grid{grid-template-columns:1fr;gap:16px;margin-top:34px}
+
+  /* 1 + 2 - hero: respiro no topo p/ a foto do Arthur + badge discreto */
+  .hero{background-position:66% center}
+  .hero .hero-copy > .pretitle{
+    margin-top:300px;font-size:11px;letter-spacing:.5px;padding:7px 13px;line-height:1.45;
+    background:rgba(11,13,36,.6);border-color:rgba(201,160,92,.6);text-shadow:0 1px 4px rgba(0,0,0,.6);
+  }
+  /* o respiro joga o texto por cima do rosto: sombra pontual (nao overlay, ver ronda 6) */
+  .hero h1,.hero .sub,.hero .micro{text-shadow:0 2px 14px rgba(0,0,0,.72)}
+  .sec-dor .wrap > .sr-hidden h2,.sec-dor .wrap > .sr-hidden .lead{text-shadow:0 2px 14px rgba(0,0,0,.7)}
+
+  /* 3 / 6 / 8 - respiro acima dos badges (a divisoria curva nao se move, e absolute) */
+  .sec-dor .wrap > .sr-hidden > .eyebrow{margin-top:250px}
+  .sec-transf .wrap > .center > .eyebrow{margin-top:250px}
+  .sec-passos .passos-head > .eyebrow{margin-top:250px}
+
+  /* 7 - anti-golpe: no mobile a imagem entra logo apos o titulo, antes da lista */
+  .golpe-split{gap:0}
+  .golpe-content{display:contents}
+  .golpe-content > h3{order:1}
+  .golpe-visual{order:2;margin:0 auto 34px}
+  .golpe-list{order:3}
+  .golpe-fecho{order:4}
+}
+
+/* 9 - calendario de turmas: ultima linha equilibrada */
+@media(min-width:561px) and (max-width:900px){
+  /* 6 colunas com cards de span 2 = 3 por linha; o 4o comeca na col 2 -> ultima linha centrada */
+  .turma-grid{grid-template-columns:repeat(6,1fr)}
+  .turma-card{grid-column:span 2}
+  .turma-card:nth-child(4){grid-column:2/span 2}
+}
+@media(max-width:560px){
+  /* 5 cards em 2 colunas: Dezembro ficava sozinho -> ocupa a linha inteira */
+  .turma-card:last-child{grid-column:span 2}
+}
 </style>
 </head>
 <body>
@@ -988,6 +1038,9 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
     <svg class="curve" viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,0 L600,0 C660,0 690,48 720,48 C750,48 780,0 840,0 L1440,0 L1440,0 L0,0 Z" fill="#080A1C"/>
     </svg>
+    <svg class="curve curve-mob" viewBox="0 0 390 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L70,0 C140,0 168,48 195,48 C222,48 250,0 320,0 L390,0 L390,0 L0,0 Z" fill="#080A1C"/>
+    </svg>
     <span class="curve-circle"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
   </div>
   <div class="wrap">
@@ -1043,6 +1096,9 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
   <div class="curve-div on-dark" aria-hidden="true">
     <svg class="curve" viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,0 L600,0 C660,0 690,48 720,48 C750,48 780,0 840,0 L1440,0 L1440,0 L0,0 Z" fill="#F2F5F6"/>
+    </svg>
+    <svg class="curve curve-mob" viewBox="0 0 390 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L70,0 C140,0 168,48 195,48 C222,48 250,0 320,0 L390,0 L390,0 L0,0 Z" fill="#F2F5F6"/>
     </svg>
     <span class="curve-circle"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
   </div>
@@ -1244,6 +1300,9 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
     <svg class="curve" viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,0 L600,0 C660,0 690,48 720,48 C750,48 780,0 840,0 L1440,0 L1440,0 L0,0 Z" fill="#0B0D24"/>
     </svg>
+    <svg class="curve curve-mob" viewBox="0 0 390 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L70,0 C140,0 168,48 195,48 C222,48 250,0 320,0 L390,0 L390,0 L0,0 Z" fill="#0B0D24"/>
+    </svg>
     <span class="curve-circle"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
   </div>
   <div class="wrap">
@@ -1337,6 +1396,9 @@ footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;b
   <div class="curve-div on-dark" aria-hidden="true">
     <svg class="curve" viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,0 L600,0 C660,0 690,48 720,48 C750,48 780,0 840,0 L1440,0 L1440,0 L0,0 Z" fill="#F2F5F6"/>
+    </svg>
+    <svg class="curve curve-mob" viewBox="0 0 390 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L70,0 C140,0 168,48 195,48 C222,48 250,0 320,0 L390,0 L390,0 L0,0 Z" fill="#F2F5F6"/>
     </svg>
     <span class="curve-circle"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
   </div>
